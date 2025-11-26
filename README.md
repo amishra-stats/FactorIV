@@ -102,7 +102,7 @@ Metabolomics, 16S, and metadata from **MD Anderson**.
    - `HCCAnalysis/plots/*.pdf` (latent balances, instrument contributions, causal heatmaps)  
    - `HCCAnalysis/output/microb_metabolites_analysis.xlsx`, `causal_effect_mtb.xlsx`, `metabolites_annotation.xlsx`
 
-See `HCCAnalysis/README_HCC.md` for details.
+See `HCCAnalysis/README.md` for details.
 
 ---
 
@@ -145,7 +145,7 @@ ProjectRoot/
 │   │── microb_metabolites_otu.R
 │   ├── output/
 │   ├── plots/
-│   └── README_HCC.md
+│   └── README.md
 │
 ├── Diabimmune/
 │   ├── dataPrep_diabimmune.R
