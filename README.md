@@ -1,4 +1,4 @@
-# Factor-IV: High-Dimensional Instrumental Variable Framework
+# Moving from Correlation to Causation: Factor Instrumental Variables Analysis of Multi-Omics Data
 ## Comprehensive Project README
 
 This repository hosts the full research workflow, simulations, and real-data applications for the **Factor‑IV** methodology:  
@@ -49,6 +49,12 @@ The method handles:
 - Unobserved confounding  
 - Correlated errors (endogeneity)  
 - Sparse loading structure
+
+
+![Figure 1: Factor–IV schematic](Figure_schema.png)
+**Figure 1. Conceptual overview of the Factor–IV framework.**  
+(A) Classical instrumental variable (IV) setting for microbiome data, where exogenous perturbations influence high-dimensional microbial features in the presence of observed and unobserved confounding.  
+(B) Factor–IV approach, which constructs instrument-aligned latent factors via a sparse low-rank first stage and estimates structured causal effects as \(\boldsymbol{\alpha} = \mathbf{V}\boldsymbol{\kappa}\) in the second stage.
 
 ---
 
