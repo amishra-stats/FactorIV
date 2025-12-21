@@ -79,7 +79,7 @@ To evaluate the performance of Factor‑IV vs naïve OLS under:
 - Signal scaling to achieve target SNR values
 - Comparison metrics:
   - RMSE of $\boldsymbol{\alpha}$ 
-  - R² of estimated vs true α  
+  - R² of estimated vs true $\boldsymbol{\alpha}$   
   - Scatter plots (facet‑based)
   - Instrument strength diagnostics
 
