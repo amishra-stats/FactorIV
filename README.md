@@ -166,7 +166,6 @@ ProjectRoot/
 ---
 
 # 6. Citation
-
 Mishra A. et al.   *Factor IV: Instrumental factor models for causal inference in high-dimensional multi-omics data*.  2025. (Manuscript under review)
 ---
 
