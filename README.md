@@ -22,7 +22,7 @@ Factor‑IV is a *latent factor–based* instrumental variable method designed f
 ![Figure 1: Factor–IV schematic](Figure_schema.png)
 **Figure 1. Conceptual overview of the Factor–IV framework.**  
 (A) Classical instrumental variable (IV) setting for microbiome data, where exogenous perturbations influence high-dimensional microbial features in the presence of observed and unobserved confounding.  
-(B) Factor–IV approach, which constructs instrument-aligned latent factors via a sparse low-rank first stage and estimates structured causal effects as \(\boldsymbol{\alpha} = \mathbf{V}\boldsymbol{\kappa}\) in the second stage.
+(B) Factor–IV approach, which constructs instrument-aligned latent factors via a sparse low-rank first stage and estimates structured causal effects as $\boldsymbol{\alpha} = \mathbf{V}\boldsymbol{\kappa}$ in the second stage.
 
 
 The model assumes (schematically):
