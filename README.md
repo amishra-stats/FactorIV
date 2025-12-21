@@ -31,6 +31,11 @@ X = ZB + QC + \varepsilon, \qquad
 Y = X\alpha + Q\eta + \delta
 $$
 
+```math
+X = ZB + QC + \varepsilon, \qquad
+Y = X\alpha + Q\eta + \delta
+```
+
 where  
 - \(X\): high‑dimensional mediators  
 - \(Y\): phenotype/outcome  
