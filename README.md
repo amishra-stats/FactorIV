@@ -78,7 +78,7 @@ To evaluate the performance of Factor‑IV vs naïve OLS under:
 - Endogeneity via **correlated error** or **unobserved confounder**
 - Signal scaling to achieve target SNR values
 - Comparison metrics:
-  - RMSE of $\boldsmbol{\alpha}$ 
+  - RMSE of $\boldsymbol{\alpha}$ 
   - R² of estimated vs true α  
   - Scatter plots (facet‑based)
   - Instrument strength diagnostics
