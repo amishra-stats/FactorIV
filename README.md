@@ -1,17 +1,14 @@
-# Moving from Correlation to Causation: Factor Instrumental Variables Analysis of Multi-Omics Data
-## Comprehensive Project README
+# Factor IV: Instrumental factor models for causal inference in high-dimensional multi-omics data
 
 This repository hosts the full research workflow, simulations, and real-data applications for the **Factor‑IV** methodology:  
-a high‑dimensional instrumental variable (IV) framework designed for multi-omics data, causal inference, and microbiome/metabolomics integration.
+a high‑dimensional instrumental variable (IV) framework designed for high-dimensional causal inference in multi-omics data.
 
-The project contains three major components:
+The project contains three major components to provide the overall conceptual architecture, methodology, study design, and guidance for navigating the repository:
 
 1. **Simulation Study**  
 2. **HCC Metabolome–Microbiome Application**  
 3. **DIABIMMUNE Multi-omics Application**
 
-Each component lives in its own subfolder with its own README file.  
-This top‑level README provides the overall conceptual architecture, methodology, study design, and guidance for navigating the repository.
 
 ---
 
@@ -22,11 +19,17 @@ Factor‑IV is a *latent factor–based* instrumental variable method designed f
 - Strong confounding and endogeneity  
 - Non‑Gaussian data (Gaussian, NB count‑based outcomes)
 
+![Figure 1: Factor–IV schematic](Figure_schema.png)
+**Figure 1. Conceptual overview of the Factor–IV framework.**  
+(A) Classical instrumental variable (IV) setting for microbiome data, where exogenous perturbations influence high-dimensional microbial features in the presence of observed and unobserved confounding.  
+(B) Factor–IV approach, which constructs instrument-aligned latent factors via a sparse low-rank first stage and estimates structured causal effects as \(\boldsymbol{\alpha} = \mathbf{V}\boldsymbol{\kappa}\) in the second stage.
+
+
 The model assumes (schematically):
-\[
+$$
 X = ZB + QC + \varepsilon, \qquad
 Y = X\alpha + Q\eta + \delta
-\]
+$$
 
 where  
 - \(X\): high‑dimensional mediators  
@@ -35,8 +38,8 @@ where
 - \(Q\): confounders or covariates  
 - \(B = UDV^\top\): latent factorization  
 - \(U,V\): instrument and mediator loading matrices  
-- \(\alpha\): causal effect vector  
-- \((\varepsilon,\delta)\): error terms possibly correlated to induce endogeneity
+- \($\alpha$\): causal effect vector  
+- \(($\varepsilon,\delta$)\): error terms possibly correlated to induce endogeneity
 
 The Factor‑IV algorithm estimates:
 1. **Latent factors** \(U, V\)  
@@ -51,10 +54,6 @@ The method handles:
 - Sparse loading structure
 
 
-![Figure 1: Factor–IV schematic](Figure_schema.png)
-**Figure 1. Conceptual overview of the Factor–IV framework.**  
-(A) Classical instrumental variable (IV) setting for microbiome data, where exogenous perturbations influence high-dimensional microbial features in the presence of observed and unobserved confounding.  
-(B) Factor–IV approach, which constructs instrument-aligned latent factors via a sparse low-rank first stage and estimates structured causal effects as \(\boldsymbol{\alpha} = \mathbf{V}\boldsymbol{\kappa}\) in the second stage.
 
 ---
 
