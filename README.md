@@ -26,25 +26,22 @@ Factor‑IV is a *latent factor–based* instrumental variable method designed f
 
 
 The model assumes (schematically):
-$$
-X = ZB + QC + \varepsilon, \qquad
-Y = X\alpha + Q\eta + \delta
-$$
 
 ```math
 X = ZB + QC + \varepsilon, \qquad
 Y = X\alpha + Q\eta + \delta
 ```
-
 where  
-- \(X\): high‑dimensional mediators  
-- \(Y\): phenotype/outcome  
-- \(Z\): instruments  
-- \(Q\): confounders or covariates  
-- \(B = UDV^\top\): latent factorization  
-- \(U,V\): instrument and mediator loading matrices  
-- \($\alpha$\): causal effect vector  
-- \(($\varepsilon,\delta$)\): error terms possibly correlated to induce endogeneity
+- $X$: high‑dimensional mediators  
+- $Y$: phenotype/outcome  
+- $Z$: instruments  
+- $Q$: confounders or covariates  
+- $B = UDV^\top$: latent factorization  
+- $U,V$: instrument and mediator loading matrices  
+- $\alpha$: causal effect vector  
+- $(\varepsilon,\delta)$: error terms possibly correlated to induce endogeneity
+
+
 
 The Factor‑IV algorithm estimates:
 1. **Latent factors** \(U, V\)  
