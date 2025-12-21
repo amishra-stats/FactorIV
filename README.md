@@ -166,12 +166,8 @@ ProjectRoot/
 ---
 
 # 6. Citation
-If you use this repository, please cite:
 
-> **Mishra & Collaborators**,  
-> *High-Dimensional Instrumental Variable Modeling for Multi-Omics Causal Inference*,  
-> UGA Working Paper, 2025.
-
+Mishra A. et al.   *Factor IV: Instrumental factor models for causal inference in high-dimensional multi-omics data*.  2025. (Manuscript under review)
 ---
 
 # 7. Contact
