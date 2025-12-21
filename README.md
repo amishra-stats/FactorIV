@@ -20,12 +20,10 @@ Factor‑IV is a *latent factor–based* instrumental variable method designed f
 - Non‑Gaussian data (Gaussian, NB count‑based outcomes)
 
 ![Figure 1: Factor–IV schematic](Figure_schema.png)
-**Figure 1. Conceptual overview of the Factor–IV framework.**  
-(A) Classical instrumental variable (IV) setting for microbiome data, where exogenous perturbations influence high-dimensional microbial features in the presence of observed and unobserved confounding.  
-(B) Factor–IV approach, which constructs instrument-aligned latent factors via a sparse low-rank first stage and estimates structured causal effects as $\boldsymbol{\alpha} = \mathbf{V}\boldsymbol{\kappa}$ in the second stage.
+**Figure 1. Conceptual overview of the Factor–IV framework.**  (A) Classical instrumental variable (IV) setting for microbiome data, where exogenous perturbations influence high-dimensional microbial features in the presence of observed and unobserved confounding.  (B) Factor–IV approach, which constructs instrument-aligned latent factors via a sparse low-rank first stage and estimates structured causal effects as $\boldsymbol{\alpha} = \mathbf{V}\boldsymbol{\kappa}$ in the second stage.
 
 
-The model assumes (schematically):
+In terms of the observed data, the model assumes (schematically):
 
 ```math
 X = ZB + QC + \varepsilon, \qquad
@@ -36,7 +34,7 @@ where
 - $Y$: phenotype/outcome  
 - $Z$: instruments  
 - $Q$: confounders or covariates  
-- $B = UDV^\top$: latent factorization  
+- $\boldsymbol{\beta} = UDV^\top$: latent factorization  
 - $U,V$: instrument and mediator loading matrices  
 - $\alpha$: causal effect vector  
 - $(\varepsilon,\delta)$: error terms possibly correlated to induce endogeneity
@@ -73,14 +71,14 @@ To evaluate the performance of Factor‑IV vs naïve OLS under:
 ### Files
 - `simulate_data.R` — core simulation engine  
 - `SimulationStudy.Rmd` — main driver  
-- `output/` — saved model fit objects  
+- `output/` — saved model fit objects  (please refer Zenodo link of the manuscript for saved data)
 - `plots/` — comparison figures
 
 ### Key Components
 - Endogeneity via **correlated error** or **unobserved confounder**
 - Signal scaling to achieve target SNR values
 - Comparison metrics:
-  - RMSE of α  
+  - RMSE of $\boldsmbol{\alpha}$ 
   - R² of estimated vs true α  
   - Scatter plots (facet‑based)
   - Instrument strength diagnostics
@@ -89,7 +87,7 @@ A dedicated README inside the `/Simulation/` folder explains details.
 
 ---
 
-# 3. HCC Application (MD Anderson mouse cohort)
+# 3. HCC Application 
 
 Folder: `HCCAnalysis/`
 
