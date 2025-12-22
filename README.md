@@ -162,6 +162,8 @@ ProjectRoot/
 │
 └── README.md  ← (this file)
 ```
+[For data in the output folder please use the Zenodo link of the manuscript. ](https://zenodo.org/uploads/17968387)
+
 
 ---
 
