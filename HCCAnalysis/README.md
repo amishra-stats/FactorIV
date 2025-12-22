@@ -109,7 +109,7 @@ install.packages(c(
   "ComplexHeatmap","pheatmap","circlize","grid","RColorBrewer",
   "readxl","openxlsx","biomformat","qdapRegex","DESeq2","ivprobit"
 ))
-devtools::install_github("liupeng615/gofar")
-devtools::install_github("liupeng615/nbfar")
+devtools::install_github("amishra-stats/gofar")
+devtools::install_github("amishra-stats/nbfar")
 ```
 
