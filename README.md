@@ -1,4 +1,4 @@
-# Factor IV: Instrumental factor models for causal inference in high-dimensional multi-omics data
+# Moving from Association to Causation: Instrumental factor models for causal inference in high-dimensional multi-omics data
 
 This repository hosts the full research workflow, simulations, and real-data applications for the **Factor‑IV** methodology:  
 a high‑dimensional instrumental variable (IV) framework designed for high-dimensional causal inference in multi-omics data.
