@@ -1,6 +1,6 @@
-# Simulation Study for High-Dimensional Instrumental Variable (Factor-IV) Framework
+# Simulation Study for Factor-IV Framework
 
-This folder contains a complete simulation pipeline for evaluating **Factor-IV**, a supervised latent-factor instrumental variable (IV) method for recovering causal effects in high-dimensional biological systems.
+Here we provide details of simulation pipeline for evaluating **Factor-IV**, a supervised latent-factor instrumental variable (IV) method for recovering causal effects in high-dimensional biological systems.
 
 The workflow combines:
 
@@ -57,15 +57,15 @@ The file `simulate_data.R` defines a function (e.g. `simulate_iv_data()`) that g
 
 ### 2.1 Latent Factor & First-Stage Model
 
-A supervised factor structure is imposed via sparse matrices \( \beta_U \) and \( \beta_V \) and a diagonal matrix \( D \):
+A supervised factor structure is imposed via sparse matrices $\( U \)$ and $\( V \)$ and a diagonal matrix $\( D \)$:
 
 ```math
-X = Z \beta_U D \beta_V^\top + Q \Gamma + \varepsilon,
+X = Z U D V^\top + Q \Gamma + \varepsilon,
 ```
 
 where:
 
-- $\beta_U \in \mathbb{R}^{m \times k}$ and $\beta_V \in \mathbb{R}^{d \times k}$ are sparse and column-normalized,
+- $U \in \mathbb{R}^{m \times k}$ and $V \in \mathbb{R}^{d \times k}$ are sparse and column-normalized,
 - $ D $ controls the strength of each latent factor,
 - $\Gamma \in \mathbb{R}^{c \times d}$ describes the contribution of observed confounders $Q$,
 - $\varepsilon$ is noise scaled to achieve a prescribed **signal-to-noise ratio (SNR)** in the first stage.
@@ -75,7 +75,7 @@ where:
 The causal signal is carried through the instrument–factor path:
 
 ```math
-\text{LF} = Z \beta_U D, \qquad
+\text{LF} = Z U D, \qquad
 Y = \text{LF} \alpha + Q \eta + \delta,
 ```
 
