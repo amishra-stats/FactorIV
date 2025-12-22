@@ -321,7 +321,7 @@ Simulation results across SNR and `tem` help illustrate these transitions.
 You can:
 
 - Modify `simulate_data.R` to:
-  - change sparsity of `betaU`, `betaV`, `alpha`,
+  - change sparsity of `U`, `V`, `alpha`,
   - alter distributions of `Z` and `Q`,
   - add additional outcome types (binary, survival, etc.).
 
@@ -331,20 +331,3 @@ You can:
   - generate summary tables for inclusion in the manuscript.
 
 ---
-
-## 8. Reproducibility and Random Seeds
-
-All simulations are set up with explicit `seed` parameters inside the data-generation function to ensure reproducibility. You can fix or vary the seed per scenario to:
-
-- reproduce exact results reported in the manuscript, or
-- perform additional Monte Carlo runs for robustness.
-
----
-
-## 9. Contact / Citation
-
-If you use this simulation framework in your own work or build upon it, please cite the associated manuscript:
-
-> **Factor Instrumental Variables Analysis: A New Approach for Uncovering Cause-and-Effect Relationships in Disease from Multi-Omics Data.**
-
-and acknowledge the simulation framework from this repository.
