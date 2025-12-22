@@ -81,7 +81,7 @@ Y = \text{LF} \alpha + Q \eta + \delta,
 
 where:
 
-- $ \alpha \in \mathbb{R}^k $ are the **true causal effects of the latent factors** (sparse or dense, depending on the setting),
+- $\alpha \in \mathbb{R}^k$ are the **true causal effects of the latent factors** (sparse or dense, depending on the setting),
 - $\( \eta \in \mathbb{R}^c \)$ encodes the effects of confounders,
 - $\( \delta \)$ is outcome noise scaled to match target $\( \text{SNR}_Y \)$.
 
