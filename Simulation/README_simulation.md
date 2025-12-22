@@ -188,13 +188,13 @@ The naïve approach regresses **each exposure on the outcome and confounders**, 
 
 - For Gaussian $\(X\)$:  
   Linear regression / multiple regression:
-```math
-  X_j ~ Y + Q.
-```
+  ```math
+    X_j ~ Y + Q.
+  ```
 
 - For NB/count $\(X\)$:  
   DESeq2 vignette-style models:
-    ```math
+  ```math
   X_j ~ Y + Q
   ```
   with NB likelihood and dispersion estimation.
