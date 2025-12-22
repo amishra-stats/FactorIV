@@ -22,7 +22,7 @@ HCCAnalysis/
 │── dataPrep_metabolitesGNP.R    # metabolite processing + microbiome alignment, CLR, export
 │── microb_metabolites_otu.R     # GOFAR fit (prefit load), IV-probit, figures, Excel outputs
 │
-├── output/
+├── output/ 
 │   ├── microb_metabolites_full_otu_wsd1.RData   # prefit GOFAR object loaded by the analysis script
 │   ├── microb_metabolites_analysis.xlsx         # U/V/C matrices, causal effects, annotations
 │   ├── causal_effect_mtb.xlsx                   # metabolite-only causal effects
@@ -37,6 +37,7 @@ HCCAnalysis/
 │   └── causal_effect_mtb_mb.pdf                 # combined metabolite/taxa causal map
 └── README_HCC.md
 ```
+[For data in the output folder please use the Zenodo link of the manuscript. ](https://zenodo.org/uploads/17968387)
 
 ---
 
