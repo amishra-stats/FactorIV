@@ -66,7 +66,7 @@ X = Z U D V^\top + Q \Gamma + \varepsilon,
 where:
 
 - $U \in \mathbb{R}^{m \times k}$ and $V \in \mathbb{R}^{d \times k}$ are sparse and column-normalized,
-- $ D $ controls the strength of each latent factor,
+- $D$ controls the strength of each latent factor,
 - $\Gamma \in \mathbb{R}^{c \times d}$ describes the contribution of observed confounders $Q$,
 - $\varepsilon$ is noise scaled to achieve a prescribed **signal-to-noise ratio (SNR)** in the first stage.
 
@@ -188,14 +188,14 @@ The naïve approach regresses **each exposure on the outcome and confounders**, 
 
 - For Gaussian $\(X\)$:  
   Linear regression / multiple regression:
-  ```math
-  X_j \sim Y + Q.
-  ```
+```math
+  X_j ~ Y + Q.
+```
 
 - For NB/count $\(X\)$:  
   DESeq2 vignette-style models:
     ```math
-  X_j \sim Y + Q
+  X_j ~ Y + Q
   ```
   with NB likelihood and dispersion estimation.
 
