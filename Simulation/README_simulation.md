@@ -228,7 +228,7 @@ For each scenario, the simulation computes:
 
 - **Mean Squared Error (MSE)** of α-estimates:
   ```math
-  \text{MSE}(\hat{\alpha}) = \frac{1}{k}\sum_{i=1}^k (\hat{\alpha}_i - \alpha_i)^2
+    \text{MSE}(\hat{\alpha}) = \frac{1}{k}\sum_{i=1}^k (\hat{\alpha}_i - \alpha_i)^2
   ```
   (or in feature space, using $\(V\alpha\)$ if desired),
 
