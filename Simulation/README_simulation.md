@@ -49,11 +49,11 @@ Simulation/
 
 The file `simulate_data.R` defines a function (e.g. `simulate_iv_data()`) that generates synthetic data under a high-dimensional IV framework. The core objects are:
 
-- **Instruments**: $ Z \in \mathbb{R}^{n \times m} $
-- **High-dimensional exposures** (e.g. microbes, metabolites): $ X \in \mathbb{R}^{n \times d} $
-- **Observed confounders**: $ Q \in \mathbb{R}^{n \times c} $
-- **Latent factors**: $ U \in \mathbb{R}^{n \times k} $ encoded via sparse loadings
-- **Outcome**: $ Y \in \mathbb{R}^n $
+- **Instruments**: $Z \in \mathbb{R}^{n \times m}$
+- **High-dimensional exposures** (e.g. microbes, metabolites): $X \in \mathbb{R}^{n \times d}$
+- **Observed confounders**: $Q \in \mathbb{R}^{n \times c}$
+- **Latent factors**: $U \in \mathbb{R}^{n \times k}$ encoded via sparse loadings
+- **Outcome**: $Y \in \mathbb{R}^n$
 
 ### 2.1 Latent Factor & First-Stage Model
 
@@ -65,10 +65,10 @@ X = Z \beta_U D \beta_V^\top + Q \Gamma + \varepsilon,
 
 where:
 
-- $\beta_U \in \mathbb{R}^{m \times k} $ and $ \beta_V \in \mathbb{R}^{d \times k} $ are sparse and column-normalized,
+- $\beta_U \in \mathbb{R}^{m \times k}$ and $\beta_V \in \mathbb{R}^{d \times k}$ are sparse and column-normalized,
 - $ D $ controls the strength of each latent factor,
-- $ \Gamma \in \mathbb{R}^{c \times d} $ describes the contribution of observed confounders $Q$,
-- $ \varepsilon $ is noise scaled to achieve a prescribed **signal-to-noise ratio (SNR)** in the first stage.
+- $\Gamma \in \mathbb{R}^{c \times d}$ describes the contribution of observed confounders $Q$,
+- $\varepsilon$ is noise scaled to achieve a prescribed **signal-to-noise ratio (SNR)** in the first stage.
 
 ### 2.2 Outcome Model
 
