@@ -189,7 +189,7 @@ The naïve approach regresses **each exposure on the outcome and confounders**, 
 - For Gaussian $\(X\)$:  
   Linear regression / multiple regression:
   ```math
-    X_j ~ Y + Q.
+  X_j ~ Y + Q.
   ```
 
 - For NB/count $\(X\)$:  
@@ -210,9 +210,9 @@ From these models, we extract:
 The Factor-IV pipeline typically proceeds through:
 
 1. **Supervised factor model** (e.g., GOFAR or related methods):  
-     ```math
+  ```math
    X \approx U D V^\top
-   ```
+  ```
    where $\(U\)$ is linked to $\(Z\)$ and $\(Q\)$.
 
 2. **Instrumental-variables outcome model** using the learned latent factors (`U_hat`) and instruments (`Z`):
@@ -227,7 +227,7 @@ The Factor-IV pipeline typically proceeds through:
 For each scenario, the simulation computes:
 
 - **Mean Squared Error (MSE)** of α-estimates:
-    ```math
+  ```math
   \text{MSE}(\hat{\alpha}) = \frac{1}{k}\sum_{i=1}^k (\hat{\alpha}_i - \alpha_i)^2
   ```
   (or in feature space, using $\(V\alpha\)$ if desired),
