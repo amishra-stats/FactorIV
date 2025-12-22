@@ -38,13 +38,14 @@ Diabimmune/
 ├── microb_diabimmune.R
 └── compile_figure_diabimmune.R
 ```
+[For data in the output folder please use the Zenodo link of the manuscript. ](https://zenodo.org/uploads/17968387)
+
 
 ---
 
 ## Data Source and Context
 
-The **DIABIMMUNE project** investigates how infant gut microbiome composition and function influence the development of autoimmune diseases, including **Type 1 Diabetes (T1D)**.  
-It includes multi-omic measurements (metagenomics, 16S rRNA), repeated longitudinal sampling, and comprehensive participant metadata (e.g., birth mode, diet, antibiotics, growth metrics).
+The **DIABIMMUNE project** investigates how infant gut microbiome composition and function influence the development of autoimmune diseases, including **Type 1 Diabetes (T1D)**.  It includes multi-omic measurements (metagenomics, 16S rRNA), repeated longitudinal sampling, and comprehensive participant metadata (e.g., birth mode, diet, antibiotics, growth metrics).
 
 Each sample includes:
 - **Microbiome data:** metagenomic species-level abundances and 16S operational taxonomic units (OTUs).  
@@ -70,7 +71,7 @@ To clean, harmonize, and integrate all raw DIABIMMUNE data files into a structur
 - Generate per-participant microbiome matrices across age windows:
   - 0–12 months
   - 12–24 months
-  - >24 months
+  - Greater than 24 months
 - Save processed objects: `data/data_diabimmune/processed_data_diabiimune.rds`
 
 **Output:** Harmonized microbiome matrices, participant covariates, and outcomes for each time window.
